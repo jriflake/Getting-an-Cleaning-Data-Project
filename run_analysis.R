@@ -24,11 +24,11 @@ run_analysis <- function(){
  names(MSTot4)[1] <- "subject"
  names(MSTot4)[68] <- "activity"
  ## create average data set by subject and activity
- MSTot5 <- MSTot4 %>% group_by(activity,subject) %>% ddply(.(activity,subject),numcolwise(mean)) %>% arrange(activity,desc(subject))
+ MSTot5 <- MSTot4 %>% group_by(activity,subject)%>% summarize_all(mean)
  ## clean up column names
  colnames(MSTot5)<- gsub("-","",names(MSTot5))
  colnames(MSTot5)<- gsub("[()]","",names(MSTot5))
- MSTot5
+ MSTot5 
  
  
 }
