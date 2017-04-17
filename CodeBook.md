@@ -18,7 +18,7 @@ Codebook explaining the different variables used and any transformations applied
 <li>subtrain: file for subject numbers for training observations</Li>
 <li>subtest : file for subject numbers for test observations</Li> </ul>
 
-##Variables
+## Variables
 
 <UL> <li>activity</li>
 <li>subject</li>
