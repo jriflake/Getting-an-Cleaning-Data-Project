@@ -19,6 +19,7 @@ Codebook explaining the different variables used and any transformations applied
 <li>subtest : file for subject numbers for test observations</Li> </ul>
 
 ##Variables
+
 <UL> <li>activity</li>
 <li>subject</li>
 <li>tBodyAccmeanX</li>     
